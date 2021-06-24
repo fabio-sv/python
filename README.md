@@ -1,1 +1,1 @@
-# python
+sintax 
