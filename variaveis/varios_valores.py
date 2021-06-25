@@ -1,4 +1,4 @@
-#Python permite que você atribua valores a várias variáveis ​​em uma linha
+#Python permite que você atribua valores a várias variáveis ​​ em uma linha
 x, y, z = "João", "Maria", "Pedro";
 
 print(x); #saída: João

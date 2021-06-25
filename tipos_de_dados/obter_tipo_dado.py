@@ -1,6 +1,6 @@
 #Em Python, o tipo de dados é definido quando você atribui um valor a uma variável:
 x1  = 5 ;
-print(type(x1)); #saída: <class 'int'>
+print(type(x1));
 
 x2  = "ola Python";
 print(type(x2));
