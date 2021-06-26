@@ -28,6 +28,12 @@ nomes = [
     ]
 
 nomes.sort(key=myFunction);
-print(nomes);
+print(nomes); #[{'nome': 'Mateus', 'year': 2000}, {'nome': 'Pedro', 'year': 2005}, {'nome': 'Gabriel', 'year': 2011}]
 
-#[{'nome': 'Mateus', 'year': 2000}, {'nome': 'Pedro', 'year': 2005}, {'nome': 'Gabriel', 'year': 2011}]
+#Classifique a lista pelo comprimento dos valores e inverta
+def myFunction2(e):
+    return len(e);
+
+cars3 = ["ford", "mitsubshi", "bmw", "volvo", "vw"];
+cars3.sort(reverse=True, key=myFunction2);
+print(cars3); #['mitsubshi', 'volvo', 'ford', 'bmw', 'vw']
