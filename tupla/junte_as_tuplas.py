@@ -1,7 +1,4 @@
-"""Junte-se a Duas Tuplas
-Para participar de duas ou mais tuplas você pode usar o operador:+ """
-
-#Junte-se a duas tuplas:
+#Junte as duas tuplas:
 tupla =  ('a', 'b', 'c')
 tupla2  = (1, 2, 3)
 
