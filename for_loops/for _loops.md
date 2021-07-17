@@ -217,3 +217,14 @@ for i in adj:
 #saborosa cereja
 ```
 
+## declaração de passe
+
+`for` loops não podem estar vazios, mas se você por algum motivo tiver um loop sem conteúdo, coloque na instrução `pass` e evitar um erro.
+
+**Exemplo**
+
+```python
+for i in [0, 1, 2]:
+    pass
+```
+
