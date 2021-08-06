@@ -7,4 +7,4 @@ nota4 = 7.2
 media = (nota1 + nota2 + nota3 + nota4) / 4
 
 print(media)
-#7.5
+#7.575

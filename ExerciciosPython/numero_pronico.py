@@ -7,5 +7,3 @@ for i in range(1, 10):
 		break	
 	if(i == 9):
 		print(numero, "não é prônico")
-		
-		
