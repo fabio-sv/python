@@ -6,4 +6,5 @@ for i in arr:
 	for j in arr:
 		if i == j:
 			frequencia = frequencia + 1
+			
 
