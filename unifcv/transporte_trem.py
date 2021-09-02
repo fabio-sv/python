@@ -17,7 +17,6 @@ class Passageiro:
     
   def to_string(self):
     print(self._nome, str(self._idade))  
-
 #---------------------------------------
 class Trem:
   def __init__(self, pessoas, max_pas):
@@ -53,10 +52,8 @@ class Trem:
       print("Lista de passageiros")
       for passag in self._passageiros:
           passag.to_string()    
-
 #---------------------------------------
-
-class Estacoes:
+class Estacao:
     def __init__(self, nome, numero_estacao, passageiro, trem):
      self._nome = nome
      self._numero_estacao = numero_estacao
@@ -84,7 +81,7 @@ class Estacoes:
     def chegada(self, passageiro): 
         self._passageiros.append(passageiro)        
 
-    def chegada(self, passageiros): 
+    def chegadas(self, passageiros): 
         self._passageiros.extend(passageiros) 
 
     def saida(self, passageiro): 
@@ -122,12 +119,41 @@ class Estacoes:
 
         for passag in self._passageiros:
             passag.to_string()                          
-
-#----------------main--------------------
+#------------------------------------
+def print_estacao(trem, estacoes):
+  trem.to_string
+  for estacao in estacoes:
+    estacao.to_string()
 
 if __name__ == '__main__':
-  passageiro1 = Passageiro("John", 20)
 
-  print(passageiro1.get_nome())
-  print(passageiro1.get_idade())
+  trem = Trem([], 10)
+
+  passageiro1 = Passageiro("John", 20)
+  passageiro2 = Passageiro("Jane", 30)
+  passageiro3 = Passageiro("Joe", 25)
+  passageiro4 = Passageiro("Tommy", 32)
+  passageiro5 = Passageiro("Tom", 62)
+  
+
+  estacao_a = Estacao("Oxford", 1, [], True)
+  estacao_b = Estacao("Londres", 2, [], False)
+  estacao_c = Estacao("Manchester", 3, [], False)
+
+  estacao_a.chegadas([passageiro1, passageiro2, passageiro3])
+  estacao_b.chegadas([passageiro4])
+  estacao_c.chegadas([passageiro5])
+
+  estacoes = []
+  estacoes.extend([estacao_a, estacao_b], estacao_c)
+
+  estacao_a.ups_trem([passageiro1, passageiro2, passageiro3], trem)
+  estacao_a.set_trem(False)
+  estacao_b.set_trem(True)
+
+  estacao_b.down_trem(passageiro3, trem)
+  estacao_b.up_trem(passageiro4, trem)
+
+  print_estacao(trem, estacoes)
+
 
