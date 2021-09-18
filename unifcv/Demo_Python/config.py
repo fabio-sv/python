@@ -5,26 +5,24 @@ class Config:
         self._qtde_discos = int(input("Quantidade de discos: "))
 
     def init_discos(self, torre_inicial):
-        print("teste init")
-        discos =  self.load_discos()
+        discos = self.load_discos()
 
         for ix in range(self._qtde_discos):
             torre_inicial.empilha(discos[ix])
 
     def load_discos(self):
         discos = []
-        arquivo = open('C:\Workspaces\Python\Trabalho\discos.txt', 'r')
+        arquivo = open('discos.txt', 'r') 
 
         for linha in arquivo:
-            numero, cor = linha.split(',')
-            discos.append(Disco(int(numero), cor))
-        return discos    
+            numero = linha
+            discos.append(Disco(int(numero)))  
 
-    # retorna a quantidade de discos configurados
+        return discos
+
     def get_qtde_discos(self):
         return self._qtde_discos
 
-    # print status
     def status_torres(self, torres):
-        print("Quantidade de discos: ", str(self._qtde_discos))
-
+        print('\n Quantidade de discos:', str(self._qtde_discos))             
+              
