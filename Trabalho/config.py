@@ -13,7 +13,7 @@ class Config:
 
     def load_discos(self):
         discos = []
-        arquivo = open('discos.txt', 'r')
+        arquivo = open('C:\Workspaces\Python\Trabalho\discos.txt', 'r')
 
         for linha in arquivo:
             numero, cor = linha.split(',')
